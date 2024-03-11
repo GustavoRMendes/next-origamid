@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Criado por Origamid",
 };
 
-export default function RootLayout({
+export default function RootLayout ({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${font_body.className} ${font_body.variable} ${font_display.variable}`}>
-        <Menu/>
+        <Menu />
         {children}
       </body>
     </html>

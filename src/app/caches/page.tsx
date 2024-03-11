@@ -5,14 +5,14 @@ type Acoes = {
 }
 
 
-export default async function acoesPage(){
-  const response = await fetch('https://api.origamid.online/acoes/lua',{
+export default async function acoesPage () {
+  const response = await fetch('https://api.origamid.online/acoes/lua', {
     next: {
       // revalidate: 5
       tags: ['acoes']
     }
   })
-  const data  = await response.json() as Acoes
+  const data = await response.json() as Acoes
 
   return (
     <>
