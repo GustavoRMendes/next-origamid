@@ -1,0 +1,12 @@
+Cache: . Por padrão o next usa o force-cache,
+que irá criar um cache persistente do fetch.
+
+revalidate.
+revalidatePath === Ativa no client component e cria nas actions como .ts
+revalidateTags === next: {tags: []}
+
+
+response = await fetch("",{
+  cache: 'no-store'
+  cache: 'force-cache'
+})

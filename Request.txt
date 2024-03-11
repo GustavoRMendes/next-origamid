@@ -1,0 +1,20 @@
+import { NextRequest } from 'next/server';
+
+export async function POST(request: NextRequest) {
+  // cookies
+  request.cookies.get('token');
+  // headers
+  request.headers.get('Cache-Control');
+  // ip
+  request.headers.get('X-Forwarded-For');
+  // url
+  request.url;
+  // searchParams
+  request.nextUrl.searchParams.get('busca');
+  // body
+  const body = await request.json();
+  const username = body.username;
+  const password = body.password;
+
+  return Response.json({ ok: true });
+}

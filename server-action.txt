@@ -1,0 +1,12 @@
+Funções que são executadas no servidor, mas podem ser iniciadas pelo cliente. Coloque no início da função 'use server' ou no início do arquivo. As funções devem ser assíncronas.
+
+São ativadas automaticamente através de um fetch ('POST'). Basicamente são endpoints de api's criados automaticamente.
+
+src/actions/server-actions.tsx
+"use server"
+export async funtion SetCookies(key,value){
+  cookies().set(key,value,{
+    httpOnly: true,
+    secure: true
+  })
+}

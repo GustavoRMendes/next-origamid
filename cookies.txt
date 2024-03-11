@@ -1,0 +1,17 @@
+import { cookies } from 'next/headers';
+
+export async function GET() {
+  cookies().get('token')?.value;
+  cookies().getAll();
+
+  // apenas em Route Handlers e Server Actions
+  cookies().has('token');
+  cookies().set('token', data.token, {
+    secure: true,
+    httpOnly: true, // sem acesso no cliente
+    sameSite: 'lax',
+  });
+  cookies().delete('token');
+
+  return Response.json({ cookies: true });
+}
