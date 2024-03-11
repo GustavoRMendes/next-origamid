@@ -1,7 +1,7 @@
 'use client'
 import { PostProdutos } from '@/actions/postprodutos'
-import React, { type Key, type ReactNode } from 'react'
-import { useFormState, useFormStatus } from 'react-dom'
+import React from 'react'
+import { useFormStatus } from 'react-dom'
 
 function Button(){
   const status = useFormStatus()
