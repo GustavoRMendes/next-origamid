@@ -8,7 +8,7 @@ export default function ScriptPage() {
       <Script
         src='https://api.origamid.online/scripts/idade-legal.min.js'
         strategy='beforeInteractive'
-        id='teste'
+        id='idade-min-js'
       />    
     </>
   )
