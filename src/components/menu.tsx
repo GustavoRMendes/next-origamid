@@ -16,7 +16,7 @@ export default function Menu () {
       <li><Link href='/images'>Images</Link> </li>
       <li><Link href='/imc'>IMC</Link> </li>
       <li><Link href='/login'>Login</Link> </li>
-      
+
     </ul>
   )
 }

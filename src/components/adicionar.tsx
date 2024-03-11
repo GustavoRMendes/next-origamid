@@ -3,13 +3,13 @@ import { PostProdutos } from '@/actions/postprodutos'
 import React from 'react'
 import { useFormStatus } from 'react-dom'
 
-function Button(){
+function Button () {
   const status = useFormStatus()
   return <button type='submit' disabled={status.pending}>Adicionar</button>
 }
 
 
-export default function Adicionar() {
+export default function Adicionar () {
 
   return (
     <>
@@ -25,11 +25,11 @@ export default function Adicionar() {
           <label htmlFor='estoque'>Estoque </label>
           <input type="text" id='estoque' name='estoque' />
           <label htmlFor='importado'>
-          <input type="checkbox" name="importado" id="importado" /> 
+            <input type="checkbox" name="importado" id="importado" />
             Importado
           </label>
-          <br/>
-          
+          <br />
+
           <Button />
         </form>
       </main>

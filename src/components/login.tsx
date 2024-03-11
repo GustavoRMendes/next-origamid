@@ -11,9 +11,9 @@ export default function Login () {
       headers: {
         'Content-type': 'application-json'
       },
-      body: JSON.stringify([username,password])
+      body: JSON.stringify([username, password])
     })
-    if(response.ok) window.location.href = '/'
+    if (response.ok) window.location.href = '/'
   }
   return (
     <form onSubmit={handleSubmit}>

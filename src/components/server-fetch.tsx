@@ -3,18 +3,18 @@ interface Produtos {
   id: number
   nome: string
 }
-export default async function ServerFetch() {
+export default async function ServerFetch () {
   const response = await fetch('https://api.origamid.online/produtos')
   const result = await response.json() as Produtos[]
-  return(
+  return (
     <>
-    <ul>
-      {result.map((produto)=> 
-        <li key={produto.id}>
-          {produto.nome}
-        </li>
-      )}
-    </ul>
+      <ul>
+        {result.map((produto) =>
+          <li key={produto.id}>
+            {produto.nome}
+          </li>
+        )}
+      </ul>
     </>
   )
 }

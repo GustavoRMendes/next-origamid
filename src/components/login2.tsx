@@ -6,8 +6,8 @@ export default function LoginPage () {
     event.preventDefault()
     const username = event.currentTarget.username.value
     const password = event.currentTarget.password.value
-    console.log({username,password})
-        
+    console.log({ username, password })
+
   }
   return (
     <form onSubmit={handleSubmit}>
